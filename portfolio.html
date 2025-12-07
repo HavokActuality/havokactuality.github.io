@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Tony Grollmes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #0d1117;
+            color: #c9d1d9;
+        }
+        nav {
+            background-color: #161b22;
+            padding: 1rem 0;
+            border-bottom: 1px solid #30363d;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+        nav a {
+            color: #c9d1d9;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #58a6ff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 60px 20px 40px 20px;
+        }
+        h1 {
+            color: #58a6ff;
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+        h2 {
+            color: #58a6ff;
+            border-bottom: 2px solid #30363d;
+            padding-bottom: 15px;
+            margin: 40px 0 25px 0;
+            font-size: 2em;
+        }
+        .section-intro {
+            background-color: #161b22;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #58a6ff;
+            margin-bottom: 30px;
+        }
+        .project {
+            background-color: #161b22;
+            padding: 30px;
+            margin: 25px 0;
+            border-radius: 8px;
+            border: 1px solid #30363d;
+            border-left: 4px solid #f85149;
+        }
+        .project h3 {
+            color: #f85149;
+            margin-bottom: 15px;
+            font-size: 1.6em;
+        }
+        .project p {
+            margin: 10px 0;
+        }
+        .project strong {
+            color: #58a6ff;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        footer {
+            text-align: center;
+            margin-top: 80px;
+            padding: 30px 20px;
+            border-top: 1px solid #30363d;
+            color: #8b949e;
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">Tony Grollmes</a>
+            <ul>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Portfolio</h1>
+    </header>
+
+    <div class="container">
+        <div class="section-intro">
+            <p>Below are selected projects showcasing level design, systems design, and game development work.</p>
+        </div>
+
+        <div class="project">
+            <h3>Level Design Showcase - Unreal Engine Environment</h3>
+            <p><strong>Role:</strong> Level Designer</p>
+            <p><strong>Tools:</strong> Unreal Engine</p>
+            <p><strong>Description:</strong> A demonstration of level design work showcasing spatial design, environment layout, and gameplay flow concepts. This project highlights skills in creating immersive game environments and optimizing player movement through 3D spaces.</p>
+            <p><strong>Video:</strong></p>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/fSiFic7i2wc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="project">
+            <h3>Echoes of the Abyss</h3>
+            <p><strong>Tools:</strong> Unreal Engine</p>
+            <p><strong>Role:</strong> Level Designer</p>
+            <p><strong>Description:</strong> An immersive game build showcasing level design, environmental storytelling, and gameplay mechanics. This project demonstrates proficiency in creating carefully crafted environments, atmospheric design, and player experience optimization in Unreal Engine.</p>
+            <p><strong>Video:</strong></p>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/mFJuISDRawo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Tony Grollmes | Level Designer & Systems Designer</p>
+    </footer>
+</body>
+</html>
